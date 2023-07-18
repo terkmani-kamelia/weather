@@ -1,0 +1,50 @@
+.title {
+  color: white;
+  display: block;
+  text-align: center;
+  margin-bottom: 12px;
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+}
+
+.search {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 12px;
+  width: 50%;
+}
+
+.search-bar {
+  width: 97%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.suggestions {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  margin-top: 5px;
+  padding: 0px;
+  list-style-type: none;
+  background-color: white;
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: left;
+}
+
+.suggestions li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background-color: #e9e9e9;
+}
