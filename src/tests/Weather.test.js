@@ -3,7 +3,7 @@ import Weather from "../components/Weather";
 
 describe("Weather", () => {
   test("renders loading spinner when selectedCity is undefined", () => {
-    render(<Weather />);
+    render(<Weather selectedCity={undefined} />);
     const loadingSpinner = screen.queryByTestId("my-loading-spinner");
     console.log(loadingSpinner);
     expect(loadingSpinner).toBeInTheDocument();
